@@ -8,34 +8,43 @@ module.exports = {
         locateStrategy: 'xpath'
         },
 
-        logIn: '._1orm9wyt',
+        logIn: {
+            selector: 'a[class="_1uqp3jab"]',
+            locateStrategy: 'css'
+        },
 
         acctBtn: {
             selector: '(//div[@class="_lvb55za"])[7]',
             locateStrategy: 'xpath'
         },
 
-        logInSubmit: '._1of57wco',
+        logInSubmit: '._12cyg0af',
 
         emailInput: {
-            selector: '(//input[@class="_rmhj6zu"])[1]',
-        locateStrategy: 'xpath'
+            selector: 'input[id="email-login-email"]',
+        locateStrategy: 'css'
         },
 
         passwordInput: {
-            selector: '(//input[@class="_rmhj6zu"])[2]',
-        locateStrategy: 'xpath'
+            selector: 'input[id="email-login-password"]',
+        locateStrategy: 'css'
         },
 
 
         homeSearchBar: '._1agpncmc',
         
-        searchBar: '._16g5dn33',
+        searchBar: '_19iuq4q',
+            // selector: '//button[@aria-label="Open search"]',
+            // locateStrategy: 'xpath'
+        // },
 
-        selectHomes: '._1t073h8',
+        selectHomes: {
+            selector: '(//div[@class="_13lgpze"])[1]',
+            locateStrategy: 'xpath'
+        },
 
         thirdListing: {
-            selector: '//div[text()="CANCUN ECO-APARTMENT & SWIMMING"]',
+            selector: '(//div[@class="_1df8dftk"])[1]',
             locateStrategy: 'xpath'
         },
 
@@ -51,7 +60,10 @@ module.exports = {
             locateStrategy: 'xpath'
         },
 
-        mobileStarredListings: '._v44ajx',
+        mobileStarredListings: {
+            selector: '(//div[@class="_v44ajx"])[1]',
+            locateStrategy: 'xpath'
+        },
 
         clickOff: {
             selector: '(//button[@class="_1rp5252"])[13]',
@@ -68,15 +80,18 @@ module.exports = {
             locateStrategy: 'xpath',
         },
 
-        savedResultText: '._1xgxs84v',
+        savedResultText: {
+            selector: '//span[text()="1 home"]',
+            locateStrategy: 'xpath'
+        },
 
         removeListing: {
             selector: 'svg[aria-label="Remove listing from a list"]',
             locateStrategy: 'css'
     },
         yesRemove: {
-            selector: 'button[class="_14raat4f"]',
-            locateStrategy: 'css'
+            selector: '//span[text()="Yes, remove"]',
+            locateStrategy: 'xpath'
         },
         nothingSavedYet : {
             selector: '//span[text()="Nothing saved yet"]',
